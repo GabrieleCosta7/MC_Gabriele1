@@ -24,6 +24,10 @@ if($sql->rowCount()>0){
             <th>PRODUTO</th>
             <th>QUANTIDADE</th>
             <th>PREÇO</th>
+            <th>EDITAR</th>
+            <th>EXCLUIR</th>
+
+
         </tr>
         <?php foreach($ler as $dados): ?>
 
@@ -32,7 +36,7 @@ if($sql->rowCount()>0){
                 <td><?php echo $dados['produto']; ?></td>
                 <td><?php echo $dados['qtd']; ?></td>
                 <td><?php echo $dados['preco']; ?></td>
-                <td><a href="editar.php?id=<?= $dados['id']; ?>">[Editar]</a></td>
+                <td><a href="editando.php?id=<?= $dados['id']; ?>">[Editar]</a></td>
                 <td><a href="excluir.php?id=<?= $dados['id']; ?>">[Excluir]</a></td>
             </tr>
 

@@ -1,14 +1,4 @@
-
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edição</title>
-</head>
-<body>
-    <h1>Editar Dados: </h1>
-    <?php
+<?php
         require 'conexao.php';
         $id = $_REQUEST["id"];
         $dados = []; 
@@ -23,3 +13,15 @@
         }
         exit;
     ?>
+
+
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edição</title>
+</head>
+<body>
+    <h1>Editar Dados: </h1>
